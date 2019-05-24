@@ -13,12 +13,13 @@ $.ajax({
     url: "https://data.nashville.gov/resource/nar3-8j89.json",
     type: "GET",
     data: {
-      //"$$app_token" : "YOURAPPTOKENHERE"
+      "$limit" : 10000,
+      "$$app_token" : "5NSdNqrHgmpsiSQ1lPTSdJape"
     }
 }).then(function(data) {
   
   birdScooters = data.length
-  console.log(birdScooters)
+
   let li = $("<li>")
   li.text("Bird Scooters: " + birdScooters)
   $(".scootersByCompany").append(li);
@@ -32,7 +33,8 @@ $.ajax({
   url: "https://data.nashville.gov/resource/jwwr-v4rf.json",
   type: "GET",
   data: {
-    //"$$app_token" : "YOURAPPTOKENHERE"
+    "$limit" : 10000,
+    "$$app_token" : "5NSdNqrHgmpsiSQ1lPTSdJape"
   }
 }).then(function(data) {
 
@@ -50,7 +52,8 @@ $.ajax({
   url: "https://data.nashville.gov/resource/ntar-zcjt.json",
   type: "GET",
   data: {
-    //"$$app_token" : "YOURAPPTOKENHERE"
+    "$limit" : 10000,
+    "$$app_token" : "5NSdNqrHgmpsiSQ1lPTSdJape"
   }
 }).then(function(data) {
 
@@ -69,7 +72,8 @@ $.ajax({
   url: "https://data.nashville.gov/resource/bmb2-fucd.json",
   type: "GET",
   data: {
-    //"$$app_token" : "YOURAPPTOKENHERE"
+    "$limit" : 10000,
+    "$$app_token" : "5NSdNqrHgmpsiSQ1lPTSdJape"
   }
 }).then(function(data) {
 
@@ -88,7 +92,8 @@ $.ajax({
   url: "https://data.nashville.gov/resource/anqi-zsnc.json",
   type: "GET",
   data: {
-    //"$$app_token" : "YOURAPPTOKENHERE"
+    "$limit" : 10000,
+    "$$app_token" : "5NSdNqrHgmpsiSQ1lPTSdJape"
   }
 }).then(function(data) {
 
@@ -107,7 +112,8 @@ $.ajax({
   url: "https://data.nashville.gov/resource/2gne-qgxz.json",
   type: "GET",
   data: {
-    //"$$app_token" : "YOURAPPTOKENHERE"
+    "$limit" : 10000,
+    "$$app_token" : "5NSdNqrHgmpsiSQ1lPTSdJape"
   }
 }).then(function(data) {
 
