@@ -5,7 +5,7 @@ let limeScooters = 0;
 let lyftScooters = 0;
 let gotchaScooters = 0;
 let spinScooters = 0;
-let totalScooters = 0;
+var totalScooters = 0;
 
 
 // ajax call for bird scooters
@@ -119,5 +119,10 @@ $(".scootersByCompany").prepend(li);
 
 totalScooters+= spinScooters;
 
-})
+}).then(function(data) {
+
+$(".totalScooters").text("Total Scooters: " + totalScooters);
+});
+
+
 
