@@ -98,6 +98,8 @@ let li = $("<li>")
 li.text("GOTCHA Scooters: " + gotchaScooters)
 $(".scootersByCompany").prepend(li);
 
+totalScooters+= gotchaScooters;
+
 });
 
 // ajax call for SPIN scooters
@@ -114,6 +116,8 @@ spinScooters = data.length
 let li = $("<li>")
 li.text("Spin Scooters: " + spinScooters)
 $(".scootersByCompany").prepend(li);
+
+totalScooters+= spinScooters;
 
 })
 
